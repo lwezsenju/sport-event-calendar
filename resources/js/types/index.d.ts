@@ -41,3 +41,36 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface Venue {
+    id: number;
+    name: string;
+    location?: string;
+    capacity?: number;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Sport {
+    id: number;
+    name: string;
+    created_at: string;
+    updated_at: string;
+}
+
+export interface Team {
+    id: number;
+    name: string;
+}
+
+export interface Event {
+    id: number;
+    event_date: string;
+    description?: string;
+    team_a: Team;
+    team_b: Team;
+    venue: Venue;
+    sport: Sport;
+    created_at: string;
+    updated_at: string;
+}
