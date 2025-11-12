@@ -26,7 +26,7 @@ export function EventCard(event: Event) {
     });
 
     return (
-        <Card className="flex flex-col justify-between">
+    <Card className="flex flex-col justify-between w-full max-w-xs md:max-w-none mx-auto">
             <CardHeader>
                 <CardTitle className="flex justify-between">
                     <div className="flex items-center gap-2 text-sm">

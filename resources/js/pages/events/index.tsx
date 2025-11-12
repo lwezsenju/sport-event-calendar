@@ -24,14 +24,15 @@ const EventsIndex: React.FC<Props> = ({ events, teams, venues, sports }) => {
             toast.error(notification.message);
         }
     },[notification]);
+    
     return (
-        <div className="container mx-auto py-6">
-            <div className='flex justify-between'>
+        <div className="container mx-auto py-6 px-3">
+            <div className='flex justify-between '>
                 <h1 className="mb-4 text-2xl font-bold">Events</h1>
                 <CreateEventDialog teams={teams} venues={venues} sports={sports} />
             </div>
 
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
                 {events.map((event) => (
                     <EventCard key={event.id} {...event} />
                 ))}
