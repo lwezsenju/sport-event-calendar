@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sport extends Model
 {
+    protected $fillable = [
+        'name',
+    ];
     use HasFactory;
     public function teams()
     {

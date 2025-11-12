@@ -12,6 +12,7 @@ Route::post('/events', [EventController::class, "store"])->name('events.store');
 Route::get('/venues', [VenueController::class, "index"])->name('venues.index');
 Route::post('/venues', [VenueController::class, "store"])->name('venues.store');
 Route::get('/sports',[SportController::class, "index"])->name('sports.index');
+Route::post('/sports',[SportController::class, "store"])->name('sports.store');
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
