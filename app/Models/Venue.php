@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Venue extends Model
 {
+    protected $fillable = [
+        'name',
+        'location',
+        'capacity',
+    ];
     use HasFactory;
     public function events()
     {
