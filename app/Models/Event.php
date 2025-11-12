@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
+    protected $fillable = [
+        'event_date',
+        'description',
+        'team_a_id',
+        'team_b_id',
+        'venue_id',
+    ];
     use HasFactory;
     public function sport()
     {

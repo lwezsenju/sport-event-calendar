@@ -27,6 +27,11 @@ export interface SharedData {
     quote: { message: string; author: string };
     auth: Auth;
     sidebarOpen: boolean;
+    notification: {
+        type: "error" | "warning" | "success";
+        message: string;
+        data: any;
+    };
     [key: string]: unknown;
 }
 
@@ -61,6 +66,8 @@ export interface Sport {
 export interface Team {
     id: number;
     name: string;
+    sport_id: number;
+    [key: string]: unknown;
 }
 
 export interface Event {
