@@ -47,7 +47,7 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Sports',
-        href: "#",
+        href: "/sports",
         icon: Dumbbell,
     },
     {
