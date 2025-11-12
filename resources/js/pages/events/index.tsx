@@ -1,6 +1,7 @@
 import { CreateEventDialog } from '@/components/events/create-event-dialog';
 import { EventCard } from '@/components/events/event-card';
 import { Button } from '@/components/ui/button';
+import AppLayout from '@/layouts/app-layout';
 import { Event, SharedData, Sport, Team, Venue } from '@/types';
 import { usePage } from '@inertiajs/react';
 import { PlusIcon } from 'lucide-react';
@@ -26,6 +27,7 @@ const EventsIndex: React.FC<Props> = ({ events, teams, venues, sports }) => {
     },[notification]);
     
     return (
+        <AppLayout>
         <div className="container mx-auto py-6 px-3">
             <div className='flex justify-between '>
                 <h1 className="mb-4 text-2xl font-bold">Events</h1>
@@ -38,6 +40,7 @@ const EventsIndex: React.FC<Props> = ({ events, teams, venues, sports }) => {
                 ))}
             </div>
         </div>
+        </AppLayout>
     );
 };
 
