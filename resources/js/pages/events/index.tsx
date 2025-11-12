@@ -17,7 +17,6 @@ interface Props {
 const EventsIndex: React.FC<Props> = ({ events, teams, venues, sports }) => {
     const notification = usePage<SharedData>().props.notification;
     useEffect(() => {
-        console.clear();
         console.log('Notification:', notification);
         if (notification?.type === 'success') {
             toast.success(notification.message);

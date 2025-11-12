@@ -66,7 +66,7 @@ export interface Sport {
 export interface Team {
     id: number;
     name: string;
-    sport_id: number;
+    sport: Sport;
     [key: string]: unknown;
 }
 

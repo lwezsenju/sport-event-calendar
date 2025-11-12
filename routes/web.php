@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SportController;
+use App\Http\Controllers\TeamController;
 use App\Http\Controllers\VenueController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -13,6 +14,9 @@ Route::get('/venues', [VenueController::class, "index"])->name('venues.index');
 Route::post('/venues', [VenueController::class, "store"])->name('venues.store');
 Route::get('/sports',[SportController::class, "index"])->name('sports.index');
 Route::post('/sports',[SportController::class, "store"])->name('sports.store');
+Route::get('/teams',[TeamController::class, "index"])->name('teams.index');
+Route::post('/teams',[TeamController::class, "store"])->name('teams.store');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
