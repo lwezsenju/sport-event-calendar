@@ -84,8 +84,9 @@ export function CreateEventDialog({
             onOpenChange={handleOpenChange}
         >
             <DialogTrigger asChild>
-                <Button variant="outline" size="icon" aria-label="Submit">
-                    <PlusIcon />
+                <Button  aria-label="Submit">
+                    <PlusIcon className="mr-2 h-4 w-4" />
+                    Create Event
                 </Button>
             </DialogTrigger>
 

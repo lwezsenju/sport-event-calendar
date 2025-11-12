@@ -42,7 +42,7 @@ const mainNavItems: NavItem[] = [
     },
     {
         title: 'Venues',
-        href: "#",
+        href: "/venues",
         icon: MapPinned,
     },
     {
