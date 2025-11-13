@@ -44,7 +44,7 @@ export function EventCard(event: Event) {
             </CardHeader>
             <CardContent>
                 <div className="my-10 flex items-center justify-between gap-4">
-                    <span>{event.team_b.name}</span>
+                    <span>{event.team_a.name}</span>
                     <div className="flex flex-col items-center gap-2">
                         <Badge variant="destructive">VS</Badge>
                     </div>

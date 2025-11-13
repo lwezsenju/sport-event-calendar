@@ -67,6 +67,7 @@ export interface Team {
     id: number;
     name: string;
     sport: Sport;
+    sport_id: number;
     [key: string]: unknown;
 }
 
